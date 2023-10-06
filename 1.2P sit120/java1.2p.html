@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <script>
+        // a. String methods
+        let text = "Hello, World!";
+        let upperCaseText = text.toUpperCase(); // Converts to uppercase
+        let lowerCaseText = text.toLowerCase(); // Converts to lowercase
+        let substringResult = text.substring(0, 5); // Extracts a substring
+        let indexOfResult = text.indexOf("World"); // Finds the index of a substring
+        let replaceResult = text.replace("World", "JavaScript"); // Replaces text
+        
+        console.log("Original Text:", text);
+        console.log("Uppercase Text:", upperCaseText);
+        console.log("Lowercase Text:", lowerCaseText);
+        console.log("Substring:", substringResult);
+        console.log("Index of 'World':", indexOfResult);
+        console.log("Replace 'World' with 'JavaScript':", replaceResult);
+
+        // b. Number methods
+        let num = 123.456;
+        let fixedResult = num.toFixed(2); // Formats to fixed decimal places
+        let stringResult = num.toString(); // Converts to a string
+        let parsedInt = parseInt("42"); // Parses a string to an integer
+        let parsedFloat = parseFloat("3.14"); // Parses a string to a float
+        let exponentialResult = num.toExponential(2); // Formats as exponential notation
+        
+        console.log("Original Number:", num);
+        console.log("Fixed:", fixedResult);
+        console.log("To String:", stringResult);
+        console.log("Parsed Integer:", parsedInt);
+        console.log("Parsed Float:", parsedFloat);
+        console.log("Exponential:", exponentialResult);
+
+        // c. Array methods
+        let fruits = ["Apple", "Banana", "Cherry"];
+        let fruitString = fruits.join(", "); // Joins array elements into a string
+        let slicedFruits = fruits.slice(1, 2); // Extracts a portion of the array
+        fruits.push("Date"); // Adds an element to the end
+        fruits.pop(); // Removes the last element
+        let reversedFruits = fruits.reverse(); // Reverses the array
+        
+        console.log("Fruits Array:", fruits);
+        console.log("Joined String:", fruitString);
+        console.log("Sliced Fruits:", slicedFruits);
+        console.log("Pushed 'Date':", fruits);
+        console.log("Popped:", fruits);
+        console.log("Reversed:", reversedFruits);
+
+        // d. Date methods
+        let currentDate = new Date();
+        let year = currentDate.getFullYear(); // Gets the current year
+        let month = currentDate.getMonth(); // Gets the current month (0-11)
+        let day = currentDate.getDate(); // Gets the current day of the month
+        let hours = currentDate.getHours(); // Gets the current hour
+        let minutes = currentDate.getMinutes(); // Gets the current minute
+        
+        console.log("Current Date:", currentDate);
+        console.log("Year:", year);
+        console.log("Month:", month);
+        console.log("Day:", day);
+        console.log("Hours:", hours);
+        console.log("Minutes:", minutes);
+
+        // e. Function Methods
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        greet("Alice");
+        let sum = add(5, 3);
+        console.log("Sum:", sum);
+    </script>
+</body>
+</html>
